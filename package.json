@@ -2,7 +2,7 @@
   "name": "new-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shankyk351.github.io/reactConceptsPractise/",
+  "homepage": "https://shankyk351.github.io/react_concepts_practise/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",

@@ -5,7 +5,7 @@ import './App.css';
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReduxForm from './components/reduxForm/reduxForm';
-import { Route, NavLink, BrowserRouter as Router } from 'react-router-dom';
+import { Route, NavLink, BrowserRouter as Router, useHistory as history } from 'react-router-dom';
 
 import HOC from './components/HOC/HOC';
 import Counter from './components/counter/counter';
@@ -30,26 +30,26 @@ class App extends React.Component {
           <Router>
             <ul className="routing-list">
               <li>
-                <NavLink activeClassName="active" to="/ReduxForm">Redux Form</NavLink>
+                <NavLink exact to="/">Redux Form</NavLink>
               </li>
               <li>
-                <NavLink activeClassName="active" to="/HOC">HOC</NavLink>
+                <NavLink to="/HOC">HOC</NavLink>
               </li>
               <li>
-                <NavLink activeClassName="active" to="/counter">State Management using Redux</NavLink>
+                <NavLink to="/counter">State Management using Redux</NavLink>
               </li>
               <li>
-                <NavLink activeClassName="active" to="/propsSharing">Props Sharing</NavLink>
+                <NavLink to="/propsSharing">Props Sharing</NavLink>
               </li>
               <li>  
-                <NavLink activeClassName="active" to="/ref">Refs</NavLink>
+                <NavLink to="/ref">Refs</NavLink>
               </li>
             </ul>
             
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-6">
-                    <Route path="/ReduxForm" component={ReduxForm} />
+                    <Route path="/" exact component={ReduxForm} />
                 </div>
               </div>
               <Route path="/HOC" component={HOC} />

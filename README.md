@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Demo
-<a href="https://shankyk351.github.io/reactConceptsPractise/">https://shankyk351.github.io/reactConceptsPractise/</a>
+<a href="https://hgupta91.github.io/reactConceptsPractise/">https://hgupta91.github.io/reactConceptsPractise/</a>
 
 
 ## Available Scripts
